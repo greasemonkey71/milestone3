@@ -355,7 +355,6 @@ figcaption {
         margin: 0 auto;
     }
 
-    /* Force the grid tracks to divide into two columns cleanly */
     .officer-grid {
         display: grid;
         grid-template-columns: 1fr 1fr; /* Explicitly forces two equal side-by-side columns */
