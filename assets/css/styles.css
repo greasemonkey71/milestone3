@@ -328,6 +328,13 @@ figcaption {
         gap: 24px;
     }
 
+    .officer-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+        width: 100%;
+    }
+
     .photo-pair {
         flex-direction: row;
     }
@@ -353,12 +360,5 @@ figcaption {
     .content-wrapper {
         max-width: 1200px;
         margin: 0 auto;
-    }
-
-    .officer-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr; /* Explicitly forces two equal side-by-side columns */
-        gap: 32px;
-        width: 100%;
     }
 }
