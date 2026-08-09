@@ -355,8 +355,11 @@ figcaption {
         margin: 0 auto;
     }
 
+    /* Force the grid tracks to divide into two columns cleanly */
     .officer-grid {
-        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Explicitly forces two equal side-by-side columns */
         gap: 32px;
+        width: 100%;
     }
 }
