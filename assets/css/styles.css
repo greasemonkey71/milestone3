@@ -2,10 +2,13 @@
     box-sizing: border-box;
 }
 
-/* I will try to section this file as well.
- I think it is cleaner if there are sections. */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 
- /* Body & Headers */
+/* BODY & HEADERS */
 body {
     background-image: url("https://raw.githubusercontent.com/greasemonkey71/milestone2/main/assets/images/soldier2.jpg");
     background-size: cover;
@@ -45,17 +48,19 @@ h1, h2, h3 {
 }
 
 .sva-logo {
-    height: auto;
+    width: 100%;
     max-width: 200px;
+    height: auto;
     display: block;
+    flex-shrink: 0; /* Prevents flex rows from shrinking or distorting the logo */
 }
 
-/* Text Colors */
+/* TEXT COLORS */
 .text-red { color: #e63946; }
 .text-white { color: #ffffff; }
-.text-blue { color: #5b9bd5; } /* Brightened slightly for higher contrast */
+.text-blue { color: #5b9bd5; } 
 
-/* Navigation Styling */
+/* NAVIGATION */
 .nav-menu {
     background-color: rgba(0, 0, 0, 0.85);
     padding: 24px;
@@ -73,7 +78,7 @@ h1, h2, h3 {
 }
 
 .nav-menu a {
-    color: #a2b0dc; /* High contrast light blue */
+    color: #a2b0dc; 
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1rem;
@@ -85,8 +90,7 @@ h1, h2, h3 {
     text-decoration: underline;
 }
 
-/* Section Styling */
-
+/* SECTION */
 .info-section, .gallery-section {
     background-color: rgba(0, 0, 0, 0.85);
     border: 1px solid #457b9d;
@@ -109,8 +113,7 @@ h1, h2, h3 {
     line-height: 1.6;
 }
 
-/* Officer Grid Styling */
-
+/* OFFICER GRID */
 .officer-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -168,7 +171,7 @@ figcaption {
     object-fit: cover;
 }
 
-/* FORM STYLING */
+/* FORM */
 .form-fieldset {
     border: 1px solid #457b9d;
     border-radius: 6px;
@@ -284,7 +287,7 @@ figcaption {
 }
 
 .resource-links a {
-    color: #64b5f6; /* Changed from dark blue #0f5b8a to meet WCAG AA contrast standard */
+    color: #64b5f6; 
     text-decoration: underline;
     font-weight: bold;
     transition: color 0.2s ease;
@@ -352,5 +355,3 @@ figcaption {
         gap: 32px;
     }
 }
-
-/* This is getting crazy long.*/
